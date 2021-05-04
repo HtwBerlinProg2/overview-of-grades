@@ -7,6 +7,9 @@ import java.util.stream.Collectors.*;
 import java.util.stream.IntStream;
 import java.lang.Integer.*;
 
+import static java.lang.String.valueOf;
+import static java.util.stream.Collectors.counting;
+
 public class GradesOverview {
 
   private int[] grades;
@@ -67,12 +70,17 @@ The average is 2.78
 */
   @Override
   public String toString() {
-    Map<Integer,Long> gradeMap=
-    alternativeGrades.stream().collect(Collectors.groupingBy(e -> e,Collectors.counting()));
-    String returnString = "You have entered the following grades: " + alternativeGrades.toString() + "\n" ;
-    for (Map.Entry<Integer,Long> entry : gradeMap.entrySet())
-      returnString += ("Grade \'" + entry.getKey() +
-              "\': " + entry.getValue()) + "\n";
+    String returnString = "You have entered the following grades: " + alternativeGrades + "\n" ;
+    List<Integer> gradeTypes = Arrays.asList(1,2,3,4,5);
+    Map<Integer,Long> resultMap= alternativeGrades.stream().collect(Collectors.groupingBy(i -> i,counting()));
+    for(int i = 1; i <= 5;i++){
+      if(!resultMap.containsKey(i)){
+       returnString += "Grade \'" + i +"\': 0" + "\n";
+      }
+      else{
+        returnString += ("Grade \'" + i +"\': " + resultMap.get(i) + "\n");
+      }
+    }
     returnString += "The total number of grades are " + alternativeGrades.size() + "\n" + "The average is " + this.calcAverage();
     return returnString;
   }
