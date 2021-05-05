@@ -5,7 +5,7 @@ public class GradesOverview {
   private int[] grades;
 
   public GradesOverview() {
-    grades = new int[5];
+    grades = new int[10];
   }
 
   public int[] getGrades() {
@@ -17,7 +17,8 @@ public class GradesOverview {
   }
 
   double calcAverage() {
-    return 0.0; // TODO return the calculated average
+    return 0.0;
+    // TODO return the calculated average
   }
 
   @Override
