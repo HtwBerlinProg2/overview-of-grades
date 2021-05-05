@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.htwberlin.GradesOverviewTest" tests="15" skipped="0" failures="13" errors="0" timestamp="2021-05-05T21:04:35" hostname="DESKTOP-7C5OHO2" time="0.135">
+<testsuite name="de.htwberlin.GradesOverviewTest" tests="15" skipped="0" failures="13" errors="0" timestamp="2021-05-05T21:09:22" hostname="DESKTOP-7C5OHO2" time="0.096">
   <properties/>
-  <testcase name="should create a full overview of all entered grades" classname="de.htwberlin.GradesOverviewTest" time="0.019">
+  <testcase name="should create a full overview of all entered grades" classname="de.htwberlin.GradesOverviewTest" time="0.017">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;You have entered the following grades: [1, 1, 5, 3, 3, 3, 2]&#10;Grade '1': 2&#10;Grade '2': 1&#10;Grade '3': 3&#10;Grade '4': 0&#10;Grade '5': 1&#10;The total number of grades are 7&#10;The average is 2.57&gt; but was: &lt;The overview is currently not available ;(&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;You have entered the following grades: [1, 1, 5, 3, 3, 3, 2]
 Grade '1': 2
 Grade '2': 1
@@ -108,7 +108,7 @@ The average is 2.57&gt; but was: &lt;The overview is currently not available ;(&
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase name="should be saved according to the input sequence" classname="de.htwberlin.GradesOverviewTest" time="0.003">
+  <testcase name="should be saved according to the input sequence" classname="de.htwberlin.GradesOverviewTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: array contents differ at index [0], expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: array contents differ at index [0], expected: &lt;3&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
 	at org.junit.jupiter.api.AssertArrayEquals.failArraysNotEqual(AssertArrayEquals.java:432)
@@ -210,7 +210,7 @@ The average is 2.57&gt; but was: &lt;The overview is currently not available ;(&
 </failure>
   </testcase>
   <testcase name="size of grades should be 10 after initialization" classname="de.htwberlin.GradesOverviewTest" time="0.0"/>
-  <testcase name="The average should be 1" classname="de.htwberlin.GradesOverviewTest" time="0.022">
+  <testcase name="The average should be 1" classname="de.htwberlin.GradesOverviewTest" time="0.018">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;1.0&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;1.0&gt; but was: &lt;0.0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -524,8 +524,8 @@ The average is 2.57&gt; but was: &lt;The overview is currently not available ;(&
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase name="The average should be 0" classname="de.htwberlin.GradesOverviewTest" time="0.0"/>
-  <testcase name="The average should be 3" classname="de.htwberlin.GradesOverviewTest" time="0.002">
+  <testcase name="The average should be 0" classname="de.htwberlin.GradesOverviewTest" time="0.001"/>
+  <testcase name="The average should be 3" classname="de.htwberlin.GradesOverviewTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;3.0&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;3.0&gt; but was: &lt;0.0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -682,7 +682,7 @@ The average is 2.57&gt; but was: &lt;The overview is currently not available ;(&
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase name="The average should be 2.6" classname="de.htwberlin.GradesOverviewTest" time="0.004">
+  <testcase name="The average should be 2.6" classname="de.htwberlin.GradesOverviewTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;2.6&gt; but was: &lt;0.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;2.6&gt; but was: &lt;0.0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -996,7 +996,7 @@ The average is 2.57&gt; but was: &lt;The overview is currently not available ;(&
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase name="should be possible to add more than 10 grades" classname="de.htwberlin.GradesOverviewTest" time="0.002">
+  <testcase name="should be possible to add more than 10 grades" classname="de.htwberlin.GradesOverviewTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;25&gt; but was: &lt;10&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;25&gt; but was: &lt;10&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
