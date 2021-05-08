@@ -87,13 +87,15 @@ class GradesOverviewTest {
   void testToString() {
     // given
     String expectedString = "You have entered the following grades: [1, 1, 5, 3, 3, 3, 2]\n" +
-                            "Grade '1': 2\n" +
-                            "Grade '2': 1\n" +
-                            "Grade '3': 3\n" +
-                            "Grade '4': 0\n" +
-                            "Grade '5': 1\n" +
-                            "The total number of grades are 7\n" +
-                            "The average is 2.57";
+            "Grade '1': 1\n" +
+            "Grade '2': 1\n" +
+            "Grade '3': 5\n" +
+            "Grade '4': 3\n" +
+            "Grade '5': 3\n" +
+            "Grade '6': 3\n" +
+            "Grade '7': 2\n" +
+            "The total number of grades are 18\n" +
+            "The average is 2.57";
 
     // when
     underTest.add(1);
