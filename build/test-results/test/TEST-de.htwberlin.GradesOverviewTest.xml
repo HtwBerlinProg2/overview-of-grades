@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.htwberlin.GradesOverviewTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-05-04T09:36:38" hostname="DESKTOP-R41VBRQ" time="0.045">
+  <properties/>
+  <testcase name="The average should be 1" classname="de.htwberlin.GradesOverviewTest" time="0.032"/>
+  <testcase name="The average should be 2" classname="de.htwberlin.GradesOverviewTest" time="0.001"/>
+  <testcase name="The average should be 0" classname="de.htwberlin.GradesOverviewTest" time="0.001"/>
+  <testcase name="The average should be 3" classname="de.htwberlin.GradesOverviewTest" time="0.001"/>
+  <testcase name="The average should be 2.6" classname="de.htwberlin.GradesOverviewTest" time="0.001"/>
+  <testcase name="The average should be 2.57" classname="de.htwberlin.GradesOverviewTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

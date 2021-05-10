@@ -1,6 +1,12 @@
 package de.htwberlin;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.*;
+
+import static java.util.stream.Collectors.counting;
 
 public class App {
 
@@ -43,6 +49,26 @@ public class App {
   }
 
   public static void main(String[] args) {
-    new App().start();
+    //new App().start();
+    List<Integer> alternativeGrades = Arrays.asList(1,2,1,1,3,4,4,2,1);
+    String returnString = "You have entered the following grades: " + alternativeGrades + "\n" ;
+    /*List<Integer> gradeTypes = Arrays.asList(1,2,3,4,5);
+    gradeTypes.stream()
+            .map(i -> alternativeGrades.stream()
+                    .filter(j -> j == i)
+                    .collect(Collectors.counting()))
+            .forEach(i -> System.out.println("Grades :"+i));*/
+    List<Integer> gradeTypes = Arrays.asList(1,2,3,4,5);
+    Map<Integer,Long> resultMap= alternativeGrades.stream().collect(Collectors.groupingBy(i -> i,counting()));
+    for(int i = 1; i <= 5;i++){
+      if(!resultMap.containsKey(i)){
+        System.out.println("Grades: \'" + i +"\' : 0" );
+      }
+      else {System.out.println("Grades: \'" + i +"\' : " + resultMap.get(i));}
+    }
+    returnString += "The total number of grades are " + alternativeGrades.size() + "\n" + "The average is " + "check";
+    System.out.println(returnString );
   }
+
 }
+
